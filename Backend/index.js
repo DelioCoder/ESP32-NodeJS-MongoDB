@@ -1,4 +1,7 @@
+require('dotenv').config();
 const app = require('./server');
+
+require('./database/index');
 
 async function main()
 {

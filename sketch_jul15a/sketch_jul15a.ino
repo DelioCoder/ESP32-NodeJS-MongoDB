@@ -60,6 +60,7 @@ void Enviar(){
     Serial.printf("Error al enviar la solicitud POST. Código de respuesta: %d\n", httpResponseCode);
   }
   http.end();
+  delay(4000);
 }
 
 void loop(){
