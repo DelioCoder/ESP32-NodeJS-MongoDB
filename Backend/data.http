@@ -1,0 +1,3 @@
+###
+
+POST http://192.168.0.7:4000/api/data?Temperatura=120&Humedad=50

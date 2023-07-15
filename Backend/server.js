@@ -10,12 +10,6 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 // Routes
-app.post('/api/data', (req, res) => {
-
-    console.log(req.body);
-    console.log(`Query: ${req.query.Temperatura}`);
-    res.sendStatus(200);
-});
-  
+app.use('/api/data', require('./routes/dataRoute'));
 
 module.exports = app;
